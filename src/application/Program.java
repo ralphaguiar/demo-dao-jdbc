@@ -11,14 +11,15 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		Department obj = new Department(1, "LIVROS");
+		//Department obj = new Department(1, "LIVROS");
 		
-		Seller sell = new Seller(21, "Buceto", "buceto@gmail.com", new Date(), 4000.0, obj);
+		//Seller sell = new Seller(21, "Buceto", "buceto@gmail.com", new Date(), 4000.0, obj);
 		
 		// Injeção de dependência
 		SellerDao sellerDao = DaoFactory.createSellerDao();
+		Seller sell = sellerDao.findByid(3);
 		
-		System.out.println(obj);
+		//System.out.println(obj);
 		System.out.println(sell);
 	}
 
