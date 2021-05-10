@@ -15,8 +15,11 @@ public class Program {
 		
 		//Seller sell = new Seller(21, "Buceto", "buceto@gmail.com", new Date(), 4000.0, obj);
 		
-		// Injeção de dependência
+		// >>>>> Injeção de dependência ****** <<<<< 
 		SellerDao sellerDao = DaoFactory.createSellerDao();
+		
+		System.out.println("==== TESTE 1 Seller findById ====");
+		
 		Seller sell = sellerDao.findByid(3);
 		
 		//System.out.println(obj);
