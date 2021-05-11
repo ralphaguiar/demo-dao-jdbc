@@ -49,6 +49,10 @@ public class Program {
 		sell.setName("Xerecanto da Silva");
 		sellerDao.update(sell);
 		System.out.println("Update SUCESSO!!!");
+		
+		System.out.println("\n==== TESTE 6 Seller delete ====");
+		sellerDao.deleteById(9);
+		System.out.println("Delete SUCESSO!");
 	}
 
 }
